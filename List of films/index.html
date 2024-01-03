@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal" id="my_modal">
+        <div class="modal_box">
+            <button class="modal_close_bttn" id="close_my_modal">
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333"/>
+                    <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333"/>
+                    </svg>
+            </button>
+            <h2>Date of viewing</h2>
+            <select class="list_of_film">
+                <option>Avatar</option>
+                <option>I Am Legend</option>
+                <option>300</option>
+                <option>The Avengers</option>
+                <option>The Wolf of Wall Street</option>
+                <option>Interstellar</option>
+                <option>Game of Thrones</option>
+                <option>Vikings</option>
+                <option>Gotham</option>
+                <option>Power</option>
+                <option>Narcos</option>
+                <option>Breaking Bad</option>
+                <option>Doctor Strange</option>
+                <option>Rogue One: A Star Wars Story</option>
+                <option>Assassin's Creed</option>
+                <option>Luke Cage</option>
+            </select>
+            <input type="date" id="date_watching" class="date_of_film">
+            <button id="add_to_section">Add</button>
+        </div>
+    </div>
+    <section id="all_everything">
+        <section id="everything">
+            <div class="heading">
+                <h2>All movies</h2>
+                <div class="heading_bttn">
+                    <button id="open_modal_bttn" class="watching_plan">Watching plan</button> 
+                    <button id="clear_calendar" class="watching_plan">Clear watching plan</button> 
+                </div>
+            </div>
+            <section id="all" class="form">
+                <!-- <div class="film">
+                    <img alt="poster">
+                    <button type="button"><img id="like" src="heart-whole.png"></button>
+                    <div id="data_of_film">
+                        <p>title</p>
+                        <p>director</p>
+                        <p>actors</p>
+                    </div>
+                    <div class="rate">
+                        <button type="button"></button>
+                        <p></p>
+                        <button type="button">+</button>
+                    </div>
+                </div> -->
+            </section>
+            <h2>Liked Movie</h2> 
+            <section id="liked" class="form">
+                
+            </section>
+
+            <h2>Top Movie</h2>
+            <button data-action="top" id="top_movies_bttn">Show top movies</button>
+            <button data-action="hide" id="hide_top_movies_bttn">Hide top movies</button>
+            <section id="top" class="form_top">
+
+            </section>
+            <div class="chart">
+                <h3>Distribution by country</h3>
+                <canvas id="myChart"></canvas>
+            </div>    
+
+        </section>
+        <div class="viewing_schedule">
+            <div class="vshel">
+                <h2>Viewing schedule</h2>
+            </div>
+            <section class="watch_later">
+                
+            </section>
+
+        </div>
+    </section>
+    
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,202 @@
+body{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    background-color: beige;
+}
+#all_everything{
+    display: flex;
+    flex-direction: row;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: wheat;
+    border: 2px solid rgb(129, 196, 174);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.film img{
+    border-radius: 15px;
+    display: flex;
+    width: 256px;
+    height: 144px;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.film{
+    border: 2px solid rgb(123, 171, 75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 256px;
+    max-height: 800px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: rgb(129, 196, 174);
+    position:relative;
+}
+.heart{
+    width: 60px;
+    height: 45px;
+    /* margin-top: 10px; */
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    
+    /* border-radius: 15px; */
+    
+}
+.chart{
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#p_rate{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.rate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#like{
+    width: 50px;
+    height: 40px;
+    pointer-events: none;
+}
+#data_of_film{
+    min-height: 156px;
+}
+.caf{
+    display: flex;
+    flex-direction: column;
+}
+#top_movies_bttn{
+    margin-bottom: 20px;
+}
+
+.slider {
+    width: 256px;
+    height: 144px;
+    overflow: hidden;
+}
+.slider-line{
+    width: 1024px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 0.5s;
+}
+.slider_buttons{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 10px;
+}
+.viewing_schedule{
+    margin-top: 130px;
+}
+.vshel{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(129, 196, 174);
+    margin-bottom: 10px;
+    background-color: wheat;
+    border-radius: 15px;
+    min-height: 50px;
+}
+.watch_later{
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    max-width: 40vh;
+    /* margin-top: 132px; */
+}
+.watching_plan{
+    height: 30px;
+    margin-bottom: 20px;
+}
+.modal{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999999;
+    background-color: rgba(0,0,0,0.3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+.modal_box{
+    gap:10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 7px 13px 5px rgba(34, 60, 80, 0.24);
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.8s;
+}
+.modal_close_bttn{
+    border:none;
+    background-color: transparent;
+    padding: 5px;
+    position: absolute;
+    top:8px;
+    right:8px;
+    cursor: pointer;
+}
+.modal.open{
+    visibility: visible;
+    opacity:1;
+}
+.modal.open .modal_box{
+    transform: scale(1);
+}
+  
+.film_top{
+    border: 2px solid rgb(123, 171, 75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 150px;
+    min-height: 80px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: rgb(129, 196, 174);
+    position:relative;
+}
+.film_top img{
+    border-radius: 15px;
+    display: flex;
+    width: 256px;
+    height: 144px;
+}
+.form_top{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    max-height: 100px;
+}
