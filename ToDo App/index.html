@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="modal" id="div_edit">
+        <div class="modal_box">
+            <input type="text" class="text_edit" placeholder="Введите задачу...">
+            <button id="save_set">Save</button>
+            <button id="cancel_set">Cancel</button>
+        </div>
+    </div>
+    
+    <header>ToDo приложение</header>
+    <div class="conteiner">
+        <div class="add_task">
+            <h2>Добавить новую задачу</h2>
+            <form id="form">
+                <input type="text" class="form_control" id="taskInput" placeholder="Текст задачи">
+                <select id="select_type">
+                    <option>work</option>
+                    <option>study</option>
+                    <option>other</option>
+                </select>
+                <button type="submit" class="add_button">Добавить задачу</button> 
+            </form>
+            <button type="button" class="other_button" id="deleteAll">Очистить все задачи</button> 
+            <button type="button" class="other_button" id="sort">Отсортировать задачи</button> 
+            <button type="button" class="other_button" id="onlyActive">Только активные задачи</button> 
+        </div>
+
+        
+        <ul class="tasks_list">
+            <!-- <li class = "empty_list"> 
+                <h2>Список дел пуст</h2>
+            </li> -->
+
+            <!-- <div class="t_work">
+
+            </div>
+            <div class="t_study">
+
+            </div>
+            <div class="t_other">
+
+            </div> -->
+            <!-- <div class="one_task">
+                <p>Купить еды</p>
+                <div class="bttn_2">
+                    <button type="button" data-action="done" class="btn-action">
+                        <img src="./img/tick.svg" alt="Done" width="18" height="18">
+                    </button>
+                    <button type="button" data-action="delete" class="btn-action">
+                        <img src="./img/cross.svg" alt="Done" width="18" height="18">
+                    </button>
+                </div>
+            </div> -->
+        </ul>
+            <!-- <div class = "t_work">
+
+            </div>
+            <div class = "t_study">
+
+            </div>
+            <div class = "t_other">
+
+            </div> -->
+
+
+        
+
+    </div>
+    <footer>
+        <div class="footer_links">
+            <div class="footer_box">
+                <p>Социальные сети университета</p>
+                <a href="https://vk.com/unidubna_official">VK</a>
+                <a href="https://t.me/unidubna_official">Telegram</a>
+                <a href="https://new2.uni-dubna.ru/">Сайт</a>
+            </div>
+            <div class="footer_box">
+                <p>Социальные сети автора</p>
+                <a href="https://vk.com/ku_kezh">VK</a>
+                <a href="https://t.me/kukezh">Telegram</a>
+                <p></p>
+            </div>
+            
+        </div>
+        <div class="footer_author">
+                <p>Все права защищены. Автор - Войкин Егор 2251</p>
+        </div>
+    </footer>
+    
+</body>
+<script src="code.js"></script>
+</html>
